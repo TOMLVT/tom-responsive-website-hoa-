@@ -1,0 +1,3523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOM</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/riwiu.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Nhận khuyến mãi lớn khi có tài khoản !</h3>
+
+            <p class="newsletter-desc">
+              Tận hưởng các <b>Ưu đãi lớn</b> đối với khách hàng có tạo tài khoản tại shop.
+            </p>
+
+          </div>
+
+          <input type="text" name="text" class="email-field" placeholder="Tên đăng nhập" required>
+          <input type="password" name="password" class="email-field" placeholder="Mật khẩu"required>
+
+          <button type="submit" class="btn-newsletter">Đăng nhập ngay</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/hoado5.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+       Mẫu đang có lượt bán cao
+      </p>
+
+      <p class="toast-title">
+       Mẫu hoa hồng đỏ
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">1 phút</time> trước
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>MIỄN PHÍ VẬN CHUYỂN</b>
+            CHO ĐƠN 250.000 VNĐ
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">VNĐ</option>
+            <option value="eur">VNĐ</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Viet Nam</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logobody.jpg" alt="Anon's logo" width="220" height="70">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Tìm kiếm...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Trang chủ</a>
+          </li>
+
+          <li class="menu-category">
+            <!--tên menu-->
+            <a href="#" class="menu-title">Chủ đề</a>
+              <!---->
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Chủ đề hoa</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa Sinh viên</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa tết</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa ngày quốc tế phụ nữ</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa ngày nhà giáo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa lễ tình nhân</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/anhthongbao.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Loại hoa ưa chuộng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa Hồng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa Sen</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa Ly</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa Cẩm chướng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa Cúc</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/anhthongbao.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Chủ đề màu hoa</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Loại Hoa đỏ hồng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Loại hoa Xanh Lam</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Loại Hoa vàng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Loại Hoa trắng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Loại hoa đa sắc</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/anhthongbao.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Chủ đề ngày lễ</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa dâng tặng</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa cảm ơn</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa khai trương</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa tết</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Hoa trang trí</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/anhthongbao.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Kiểu dáng</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu Giỏ Hoa</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu Bình Hoa</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu Lẳng Hoa</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#">Mẫu Hoa Đơn</a>
+              </li>
+            
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Màu sắc</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu hoa đỏ hồng</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu hoa xanh lam</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu hoa vàng ánh</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mẫu hoa đa sắc</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Bộ sưu tập</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Hoa bó siêu lớn</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoa Đơn </a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoa tổng hợp</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoa đa sắc</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Qùa tặng kèm</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Gấu bông mini</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Nến thơm</a>
+              </li>
+
+             
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hoa tươi</a>
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Hoa Hồng</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoa Cẩm Chướng</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoa Cúc</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoa Sen</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Tin tức</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Danh mục mẫu hoa</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Trang chủ</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Chủ đề mẫu hoa</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa sinh viên</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa ngày nhà giáo</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa ngày quốc tế phụ nữ</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa lễ tình nhân</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Chủ đề màu hoa</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Loại hoa đỏ hồng</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Loại hoa xanh lam</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Loại hoa vàng ánh</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Loại hoa trắng</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Chủ đề ngày lễ</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa dâng tặng</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa cảm ơn</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa khai trương</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Hoa đám cưới</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Kiểu dáng mẫu hoa</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mẫu giỏ hoa</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mẫu bình hoa</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mẫu lẵng hoa</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Mẫu hoa đơn</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Tin tức</a>
+        </li>
+
+       
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Ngôn ngữ</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Việt Nam</a>
+              </li>
+
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Giá trị</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">VNĐ</a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/body1.jpeg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">MẪU HOA NỔI BẬT</p>
+
+              <h2 class="banner-title">HOA LÀ GIÁ TRỊ CÁI ĐẸP</h2>
+
+              <p class="banner-text">
+               chỉ với <b>197</b>.000 VNĐ
+              </p>
+
+              <a href="#" class="banner-btn">Mua ngay</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/header2.jpeg" alt="modern sunglasses" class="banner-img">
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/header2.jpeg" alt="new fashion summer sale" class="banner-img">
+
+           
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="dress & frock" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">HOA TÌNH YÊU</h3>
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="winter wear" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">HOA SINH NHẬT</h3>
+
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="glasses & lens" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">MẪU HOA MỚI</h3>
+
+              
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="shorts & jeans" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">CÂY VĂN PHÒNG</h3>
+
+               
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="t-shirts" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">HOA CHÚC MỪNG</h3>
+
+         
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="jacket" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">HOA CHIA BUỒN</h3>
+
+               
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/badge.png" alt="watch" width="50">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">MẪU HOA CƯỚI</h3>
+
+               
+              </div>
+
+              <a href="#" class="category-btn">Xem tất cả</a>
+
+            </div>
+
+          </div>
+
+         
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Danh mục mẫu hoa</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Hoa hồng</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hồng Xanh</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hồng Trắng</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hồng Vàng</p>
+                     
+                    </a>
+                  </li>
+
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Hoa hướng dương</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hướng Dương Mini</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hướng Dương Mammoth</p>
+                    
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hướng Dương Đỏ</p>
+                  
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Hướng Dương Dưa</p>
+                    
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Hoa ly</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Ly Đỏ</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Ly Trắng</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Ly Vàng</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Hoa sen</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Sen Trắng</p>
+                     
+                    </a>
+                  </li>
+
+                
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Hoa cẩm chướng</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa cẩm chướng Đỏ</p>                  
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa cẩm chướng Vàng</p>                  
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa cẩm chướng Trắng</p>                  
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa cẩm chướng Hồng</p>                  
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Hoa cúc</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Cúc Tây Ban Nha</p>
+                     
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Cúc Mỹ</p>
+                     
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dmuc.png" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Lan hồ điệp</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Lan Hồ Điệp Hồng và Trắng</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Lan Hồ Điệp Đa Sắc</p>
+                      
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hoa Lan Hồ Điệp Cắm Tượng Tân</p>
+                      
+                    </a>
+                  </li>
+
+                 
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">CÁC MẪU HOA HOT</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/hoado5.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Mẫu hoa hồng</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>179.000</del>
+                      <p class="price">129.000</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/hoado5.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Mẫu hoa hồng</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>179.000</del>
+                      <p class="price">129.000</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/hoado5.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                    width="75" height="75">
+                </a>
+
+                <div class="showcase-content">
+
+                  <a href="#">
+                    <h4 class="showcase-title">Mẫu hoa hồng</h4>
+                  </a>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <del>179.000</del>
+                    <p class="price">129.000</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/hoado5.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                    width="75" height="75">
+                </a>
+
+                <div class="showcase-content">
+
+                  <a href="#">
+                    <h4 class="showcase-title">Mẫu hoa hồng</h4>
+                  </a>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <del>179.000</del>
+                    <p class="price">129.000</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">HOA HỒNG</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="hoahong" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="hoahong" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="hoahong" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="hoahong" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoado5.jpg" alt="hoahong" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Hồng Đỏ</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+
+                      <div class="price-box">
+                        <p class="price">129.000</p>
+                        <del>119.000</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">HOA SEN</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/hoasenh3.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Sen</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu Mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">259.000</p>
+                        <del>359.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">HOA CẨM CHƯỚNG</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/camchuong4.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Mẫu Hoa Cẩm Chướng</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Mẫu mới</a>
+            
+                      <div class="price-box">
+                        <p class="price">150.000</p>
+                        <del>180.000</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">ƯU ĐÃI HÔM NAY</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/phunu1.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Hoa hỗn hợp, sự kết hợp hài hòa giữa cái đẹp</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                     Hoa mang giá trị sắc đẹp giúp cho người phụ nữ
+                     trở nên sang trọng ,tôn vinh sắc đẹp
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">150.000</p>
+
+                      <del>200.000</del>
+                    </div>
+
+                    <button class="add-cart-btn">Mua Ngay</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Đã bán: <b>20</b>
+                        </p>
+
+                        <p>
+                          Số lượng còn lại: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Mua ngay nào ! Khuyến mãi còn:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">1</p>
+
+                          <p class="display-text">Ngày</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">1</p>
+                          <p class="display-text">giờ</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">30</p>
+                          <p class="display-text">phút</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">giây</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/honhop1.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+              
+                    <a href="#">
+                      <h3 class="showcase-title">Hoa hỗn hợp, sự kết hợp hài hòa giữa cái đẹp</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                     Hoa mang giá trị sắc đẹp giúp cho người phụ nữ
+                     trở nên sang trọng ,tôn vinh sắc đẹp
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">159.000</p>
+                      <del>259.000</del>
+                    </div>
+              
+                    <button class="add-cart-btn">MUA NGAY</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Đã bán: <b>20</b>
+                        </p>
+
+                        <p>
+                          Số lượng còn lại: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Mua ngay nào ! Khuyến mãi còn:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">1</p>
+
+                          <p class="display-text">Ngày</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">1</p>
+                          <p class="display-text">giờ</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">30</p>
+                          <p class="display-text">phút</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">giây</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">CÁC MẪU HOA MỚI</h2>
+
+            <div class="product-grid">
+                <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong2.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+              <!---------------------------------------------------------->
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                 
+                 <!--change image-->
+                 <!--doi hinh anh-->
+                  <img src="./assets/images/products/camchuong1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge angle red">sale 10%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Hoa cẩm chướng</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Mẫu hoa tặng vào các dịp lễ lớn.</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">234.000</p>
+                    <del>254.000</del>
+                  </div>
+
+                </div>
+
+              </div>
+              <!---------------------------------------------------------->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">GÓP Ý / PHẢN HỒI</h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/user5.webp" alt="alan doe" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">MINH TỚI</p>
+
+              <p class="testimonial-title">Thiết kế / trang trí nội thất</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Các mẫu hoa đẹp rẻ , rất thích hợp để 
+                trang trí và tặng.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/nenhoacuoi1.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% KHUYẾN MÃI</p>
+
+              <h2 class="cta-title">MẪU HOA CƯỚI XINH ĐẸP</h2>
+
+              <p class="cta-text">Nhiều lựa chọn ưu đãi</p>
+
+              <button class="cta-btn">MUA NGAY</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">DỊCH VỤ</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">GIAO HÀNG NHANH</h3>
+                  <p class="service-desc">Nhận hàng trong ngày</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">HỖ TRỢ TƯ VẪN</h3>
+                  <p class="service-desc">24/7</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">HOÀN TRẢ</h3>
+                  <p class="service-desc">Đổi 1:1 khi hoa sai mẫu</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">NHẬN KHUYẾN MÃI</h3>
+                  <p class="service-desc">Tạo tài khoản trong shop</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/tintuc1.jpg" alt="" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Tin tức mới</a>
+
+              <a href="#">
+                <h3 class="blog-title">Top các mẫu hoa nổi bật trong năm 2024.</h3>
+              </a>
+
+              <p class="blog-meta">
+                 <cite>Thứ Hai</cite> <time datetime="2022-04-06">26-2-2024</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/tintuc222.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Tin tức mới</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Mẫu hoa có màu sắc đẹp nhất , ưa chuộng nhất</a>
+              </h3>
+          
+              <p class="blog-meta">
+                <cite>Thứ Hai</cite> <time datetime="2022-04-06">26-2-2024</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/tintuc3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Tin tức mới</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Các loài hoa siêu đẹp được giới trẻ ưa thích</a>
+              </h3>
+          
+              <p class="blog-meta">
+                <cite>Thứ Hai</cite> <time datetime="2022-04-06">26-2-2024</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/tintuc4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Tin tức mới</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Mẫu bó hoa thích hợp cho các dịp lễ lớn</a>
+              </h3>
+          
+              <p class="blog-meta">
+                <cite>Thứ Hai</cite> <time datetime="2022-04-06">26-2-2024</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Thông tin các mẫu hoa</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Mẫu hoa tươi :</h3>
+
+          <a href="#" class="footer-category-link">Hoa Hồng</a>
+          <a href="#" class="footer-category-link">Hoa Sen</a>
+          <a href="#" class="footer-category-link">Hoa Ly</a>
+          <a href="#" class="footer-category-link">Hoa Cẩm Tú</a>
+          <a href="#" class="footer-category-link">Hoa Cẩm Chướng</a>
+          <a href="#" class="footer-category-link">Hoa Cúc</a>
+          <a href="#" class="footer-category-link">Lan Hồ Điệp</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">chủ đề mẫu hoa :</h3>
+        
+          <a href="#" class="footer-category-link">Hoa sinh nhật</a>
+          <a href="#" class="footer-category-link">Hoa Tình Yêu</a>
+          <a href="#" class="footer-category-link">Hoa Mới Nhất</a>
+          <a href="#" class="footer-category-link">Hoa Văn Phòng</a>
+          <a href="#" class="footer-category-link">Hoa Chúc Mừng</a>
+          <a href="#" class="footer-category-link">Hoa Chia Buồn</a>
+          <a href="#" class="footer-category-link">Hoa Cưới</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Kiểu dáng mẫu hoa :</h3>
+        
+          <a href="#" class="footer-category-link">Mẫu Giỏ Hoa</a>
+          <a href="#" class="footer-category-link">Mẫu Bình Hoa</a>
+          <a href="#" class="footer-category-link">Mẫu Hoa Cài Áo</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Thông tin cửa hàng</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Giới Thiệu</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Tin Tức</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Câu Hỏi thường gặp</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Tuyển dụng</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Liên hệ tư vấn</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Mẫu Hoa</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Các loại hoa đẹp</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Các loại kiểu hoa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Các màu sắc hoa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Các chủ đề hoa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Các hoa nổi bật</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Hỗ trợ</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cách chăm sóc hoa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cách chọn hoa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cách mua hoa</a>
+          </li>
+        
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Dịch vụ cửa hàng</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Giao hàng trong ngày</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Tư vấn mẫu hoa</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Đổi trả / hoàn trả</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sự kiện ưu đãi</a>
+          </li>
+        
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Liên hệ chúng tôi</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              DNC CAN THO
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="" class="footer-nav-link">+84 123 456 789</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">Tom@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Theo dõi</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+         TOM - WEBSITE
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
