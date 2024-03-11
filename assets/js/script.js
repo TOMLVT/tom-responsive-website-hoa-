@@ -1,5 +1,6 @@
 'use strict';
 
+//js modal mini =================================================================
 // modal variables
 const modal = document.querySelector('[data-modal]');
 const modalCloseBtn = document.querySelector('[data-modal-close]');
@@ -12,11 +13,11 @@ const modalCloseFunc = function () { modal.classList.add('closed') }
 modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
+//=================================================================
 
 
 
-
-// notification toast variables
+// thông báo mini =================================================================
 const notificationToast = document.querySelector('[data-toast]');
 const toastCloseBtn = document.querySelector('[data-toast-close]');
 
@@ -24,6 +25,28 @@ const toastCloseBtn = document.querySelector('[data-toast-close]');
 toastCloseBtn.addEventListener('click', function () {
   notificationToast.classList.add('closed');
 });
+
+//=================================================================
+// sử dụng swiper tạo slider chuyển động 
+document.addEventListener("DOMContentLoaded", function() {
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 2000, // Tự động chuyển slide sau mỗi 2 giây
+    },
+    pagination: {
+      el: '.swiper-pagination', // Thanh điều hướng
+      clickable: true,
+    },
+  });
+});
+//=================================================================
+
+
+
+
+
 
 
 
@@ -88,16 +111,30 @@ for (let i = 0; i < accordionBtn.length; i++) {
 }
 
 //vo hieu hoa code
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault(); // Chặn hành động mặc định khi chuột phải được nhấp
-  alert('Vĩ Thuận đã chặn xem code!');
-});
+// document.addEventListener('contextmenu', function(event) {
+//   event.preventDefault(); // Chặn hành động mặc định khi chuột phải được nhấp
+//   alert('Vĩ Thuận đã chặn xem code!');
+// });
+
+
+
+//
+
+
+
+
+
+
+
+
+
+
